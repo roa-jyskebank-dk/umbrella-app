@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "docker-start": "ng serve --host 0.0.0.0 --prod --watch false --proxy-config docker-proxy.conf.json",
+    "docker-start": "ng serve --host 0.0.0.0 --watch false --proxy-config docker-proxy.conf.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

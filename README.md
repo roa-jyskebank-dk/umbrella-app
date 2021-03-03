@@ -1,6 +1,6 @@
 # JB Code Challenge optional foundation (Code name "Umbrella")
 
-Optional foundatino project for the JB code challenge. The project consists of a frontend and a backend. Feel free to change whatever you prefer to solve the challenge.
+Optional foundation project for the JB code challenge. The project consists of a frontend and a backend template. Feel free to use the template and change whatever you prefer to solve the challenge.
 
 ## Build and run backend
 
@@ -14,7 +14,7 @@ java -jar target/umbrella.jar
 
 ## Build and run frontend
 
-With Node 14
+With Node 10+ and NPM
 
 ```bash
 cd frontend
@@ -27,3 +27,10 @@ npm start
 ```
 docker-compose up --build
 ```
+
+## To open the application
+
+Open this URL in your preferred browser:
+´´´
+http://localhost:4200
+´´´
