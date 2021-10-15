@@ -19,17 +19,17 @@ public class FactResource {
     private static final JsonBuilderFactory JSON = Json.createBuilderFactory(Collections.emptyMap());
 
     @Inject()
-    CatFactProvider catFactProvider;
+    FactService factService;
 
     @GET
     @Path("/fact")
     @Produces(MediaType.APPLICATION_JSON)
     public JsonObject getFact() throws Exception {
-        String catFact = catFactProvider.getRandomFact();
-        return createResponse(catFact);
+        String fact = factService.getRandomFact();
+        return createResponse(fact);
     }
 
-    private JsonObject createResponse(String catFact) {
-        return JSON.createObjectBuilder().add("fact", catFact).build();
+    private JsonObject createResponse(String fact) {
+        return JSON.createObjectBuilder().add("fact", fact).build();
     }
 }

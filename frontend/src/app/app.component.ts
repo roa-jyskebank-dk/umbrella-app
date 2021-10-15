@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 interface FactResponse {
@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.getFact();
   }
 
-  getFact() {
+  private getFact() {
     this.response$ = this.http.get<FactResponse>('/api/fact');
   }
 }
